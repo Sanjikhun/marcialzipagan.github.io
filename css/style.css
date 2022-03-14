@@ -1,0 +1,233 @@
+/*-------------------------------------------------------------------------*/
+/*---------------------------------GENERAL---------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+
+.home-container {
+  position: relative;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.bg-overlay {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+  background-size: cover;
+}
+
+.home-bg {
+  background-image: url("/images/home.jpg");
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+}
+/*-------------------------------------------------------------------------*/
+/*--------------------------------Navigation-------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+.nav-container {
+  font-size: 1.4rem;
+  padding: 3rem 5rem;
+
+  max-widthg: 100vw;
+  /*height: 15vh;*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*logo*/
+.logo-img {
+  max-width: 12rem;
+}
+
+/*Main Menu*/
+.main-menu {
+  display: flex;
+}
+
+/*Links*/
+.menu-links {
+  list-style: none;
+  padding: 1.5rem;
+  text-transform: uppercase;
+}
+
+.menu-links a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.menu-links:first-child {
+  background-color: #2259ff;
+  border-radius: 0.3rem;
+}
+
+.menu-links:hover,
+.menu-links:active {
+  cursor: pointer;
+}
+
+/*CV DL Button*/
+.dl-cv {
+  border: 0.1rem solid rgba(255, 255, 255, 0.1);
+  /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);*/
+}
+
+.dl-cv:link,
+.dl-cv:visited icon {
+  display: flex;
+  gap: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  background: none;
+  color: #2259ff;
+}
+
+.dl-txt {
+  color: #fff;
+}
+
+.dl-cv:link .icon,
+.dl-cv:active .icon {
+  color: #2259ff;
+}
+
+.dl-cv:hover,
+.dl-cv:active {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #2259ff;
+  border: 0.1rem solid #2259ff;
+  color: #fff;
+}
+
+dl-cv:hover .icon {
+  color: #2259ff;
+}
+
+/*-------------------------------------------------------------------------*/
+/*-------------------------------Main Section------------------------------*/
+/*-------------------------------------------------------------------------*/
+
+.main-section {
+  /*height: 85%;*/
+  position: relative;
+  /*height: 70vh;*/
+  display: flex;
+  /*align-items: center;
+  justify-content: center;*/
+}
+
+/*Social Media Icons*/
+.icons {
+  position: fixed;
+  left: 3rem;
+  font-size: 1.6rem;
+  top: 50%;
+  transform: translate(0, -50%);
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.icons i {
+  color: #fff;
+}
+
+.icons a {
+  text-decoration: none;
+}
+
+.icons i:hover {
+  color: #2259ff;
+  transform: scale(2);
+}
+
+/*Main Texts*/
+.greetings-txt {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.greetings-txt h1 {
+  color: #2259ff;
+  font-size: 1.8rem;
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.greetings-txt h2 {
+  font-size: 5.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+/*Typewriter*/
+.typewrite,
+.letter-a {
+  display: inline;
+  font-size: 5.6rem;
+  line-height: 6.5rem;
+  font-weight: 600;
+}
+
+.typewrite-container {
+  margin-top: 0.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/*Contact Number*/
+.cp-number {
+  position: fixed;
+  right: -3rem;
+
+  top: 50%;
+  transform: translate(0, -50%);
+
+  transform: rotate(-90deg);
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.fa-phone {
+  margin-right: 1rem;
+  color: #2259ff;
+}
+
+/*-------------------------------------------------------------------------*/
+/*----------------------------Reusable Components--------------------------*/
+/*-------------------------------------------------------------------------*/
+
+/*container*/
+/*images*/
+/*buttons*/
+/*Icons*/
